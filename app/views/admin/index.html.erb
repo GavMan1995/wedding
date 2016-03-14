@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <th>id/number</th>
+    <th>first name</th>
+    <th>last name</th>
+    <th>street</th>
+    <th>city</th>
+    <th>state</th>
+    <th>zip</th>
+    <th>country</th>
+  </thead>
+  <% @addresses.each do |a| %>
+  <tbody>
+    <td><%= a.id %></td>
+    <td><%= a.first_name %></td>
+    <td><%= a.last_name %></td>
+    <td><%= a.street %></td>
+    <td><%= a.city %></td>
+    <td><%= a.state %></td>
+    <td><%= a.zip %></td>
+    <td><%= a.country %></td>
+  </tbody>
+  <% end %>
+</table>
