@@ -5,12 +5,13 @@
     <p class="center pink-text text-lighten-3" style="font-size: 20px;">Please fill out your address and information to recieve an invitation to our wedding</p>
     <h5 class="center pink-text text-lighten-4">Thank You :)</h5>
     <%= form_for @address do |f| %>
-      <div class=" col s12 m6">
+
+      <div class=" col s12 m12 l6">
         <%= f.label :First_Name %>
         <%= f.text_field :first_name, placeholder: "required", autofocus: true, required: true %>
       </div>
 
-      <div class=" col s12 m6">
+      <div class=" col s12 m12 l6">
         <%= f.label :Last_Name %>
         <%= f.text_field :last_name, placeholder: "required", required: true %>
       </div>
@@ -35,6 +36,7 @@
         <%= f.text_field :country, placeholder: "required", required: true %>
 
       <button class="btn pink lighten-4" type="submit" name="button">Save Address</button>
+
     <% end %>
   </div>
 
