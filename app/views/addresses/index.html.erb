@@ -1,9 +1,9 @@
 
 
 <div class="row" style="margin: 0;">
-  <div class="col s12 l4 left white" style="margin: 0; padding: 1px;">
+  <div class="col s12 l4 left brown lighten-5" style=" padding: 1px;">
     <p class="center pink-text text-lighten-3" style="font-size: 20px;">Please fill out your address and information to recieve an invitation to our wedding</p>
-    <h5 class="center pink-text text-lighten-4">Thank You :)</h5>
+    <h5 class="center grey-text">Thank You :)</h5>
     <%= form_for @address do |f| %>
 
       <div class=" col s12 m12 l6">
@@ -35,12 +35,12 @@
         <%= f.label :country %>
         <%= f.text_field :country, placeholder: "required", required: true %>
 
-      <button class="btn pink lighten-4" type="submit" name="button">Save Address</button>
+      <button class="btn pink lighten-4" type="submit" name="button"> Save Address </button>
 
     <% end %>
   </div>
 
   <div class="col s8 right hide-on-med-and-down" style="margin: 0; padding: 0; border: 0;">
-    <img src="<%= image_path("jess.jpg") %>" style="width: 100%;" />
+    <img src="<%= image_path("jess.jpeg") %>" style="width: 100%; padding: 1%;" />
   </div>
 </div>
