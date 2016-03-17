@@ -1,4 +1,4 @@
-<table class="table-responsive striped">
+<table class="table-responsive">
   <thead>
     <th>id/number</th>
     <th>first name</th>
@@ -10,7 +10,7 @@
     <th>country</th>
   </thead>
   <% @addresses.each do |a| %>
-  <tbody>
+  <tbody class="striped">
     <td><%= a.id %></td>
     <td><%= a.first_name %></td>
     <td><%= a.last_name %></td>
