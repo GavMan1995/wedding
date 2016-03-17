@@ -1,4 +1,4 @@
-<table class="table-responsive">
+<table class="table-responsive striped">
   <thead>
     <th>id/number</th>
     <th>first name</th>
@@ -10,15 +10,17 @@
     <th>country</th>
   </thead>
   <% @addresses.each do |a| %>
-  <tbody class="striped">
-    <td><%= a.id %></td>
-    <td><%= a.first_name %></td>
-    <td><%= a.last_name %></td>
-    <td><%= a.street %></td>
-    <td><%= a.city %></td>
-    <td><%= a.state %></td>
-    <td><%= a.zip %></td>
-    <td><%= a.country %></td>
+  <tbody>
+    <tr>
+      <td><%= a.id %></td>
+      <td><%= a.first_name %></td>
+      <td><%= a.last_name %></td>
+      <td><%= a.street %></td>
+      <td><%= a.city %></td>
+      <td><%= a.state %></td>
+      <td><%= a.zip %></td>
+      <td><%= a.country %></td>
+  </tr>
   </tbody>
   <% end %>
 </table>
