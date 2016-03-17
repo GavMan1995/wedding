@@ -9,8 +9,9 @@
     <th>zip</th>
     <th>country</th>
   </thead>
-  <% @addresses.each do |a| %>
+
   <tbody>
+    <% @addresses.each do |a| %>
     <tr>
       <td><%= a.id %></td>
       <td><%= a.first_name %></td>
@@ -21,6 +22,6 @@
       <td><%= a.zip %></td>
       <td><%= a.country %></td>
   </tr>
-  </tbody>
   <% end %>
+  </tbody>
 </table>
